@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TCE — Influencer Marketing Agency | San Francisco &amp; Global</title>
+  <meta name="description" content="TCE is the #1 Influencer Marketing Agency in San Francisco. Access 1M+ vetted creators across 50+ countries with 24-hour campaign launches and transparent ROI.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tce-san-francisco.vercel.app/">
+
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tce-san-francisco.vercel.app/">
+  <meta property="og:title" content="TCE — Influencer Marketing Agency | San Francisco &amp; Global">
+  <meta property="og:description" content="TCE is the #1 Influencer Marketing Agency in San Francisco. Access 1M+ vetted creators across 50+ countries with 24-hour campaign launches and transparent ROI.">
+  <meta property="og:image" content="https://tce-san-francisco.vercel.app/images/creators/niels.jpeg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TCE — Influencer Marketing Agency | San Francisco &amp; Global">
+  <meta name="twitter:description" content="TCE is the #1 Influencer Marketing Agency in San Francisco. Access 1M+ vetted creators across 50+ countries with 24-hour campaign launches and transparent ROI.">
+  <meta name="twitter:image" content="https://tce-san-francisco.vercel.app/images/creators/niels.jpeg">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"MarketingAgency",
+    "name":"TCE — The Crazy Entrepreneur",
+    "url":"https://thecrazyentrepreneur.com/influencer-marketing-agency-san-francisco/",
+    "description":"Enterprise influencer marketing agency executing multi-market creator strategy, UGC, and attribution.",
+    "contactPoint":{"@type":"ContactPoint","contactType":"Sales","email":"work@thecrazyentrepreneur.com"}
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Lenis CSS CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- =========================================================
+       HEADER — Red announcement bar + floating pill navbar
+       ========================================================= -->
+  <header class="site-header" id="siteHeader">
+
+    <!-- FLOATING PILL NAV -->
+    <div class="nav-pill-wrap">
+      <div class="nav-pill">
+
+        <!-- Logo -->
+        <a href="#hero" class="nav-logo" aria-label="TCE Home">
+          <img src="Logo/tce_logo_wide_black-768x184-2-1.webp" alt="The Crazy Entrepreneur Logo" class="brand-logo-img">
+        </a>
+
+        <!-- Desktop nav links -->
+        <nav id="mainNav">
+          <ul class="nav-links">
+            <li><a href="#positioning" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#whyus" class="nav-link">Why Us</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- CTA + Phone + hamburger -->
+        <div class="nav-actions">
+          <a href="tel:+18147705424" class="header-phone-link" aria-label="Call TCE Sales +1 (814) 770-5424">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="phone-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>+1 (814) 770-5424</span>
+          </a>
+          <a href="#contact" class="btn-nav-red" id="navCta">
+            <span class="nav-cta-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
+            <span>Get in touch</span>
+          </a>
+          <button class="nav-mobile-btn" id="navToggle" onclick="openMobMenu()" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars" id="navIcon"></i>
+          </button>
+        </div><!-- /.nav-actions -->
+
+      </div><!-- /.nav-pill -->
+
+    </div><!-- /.nav-pill-wrap -->
+  </header>
+
+  <!-- =========================================================
+       FULLSCREEN MOBILE MENU OVERLAY
+       ========================================================= -->
+  <div class="mob-menu-overlay" id="mobMenuOverlay" aria-hidden="true">
+    <!-- Top pill bar (logo + close) -->
+    <div class="mob-menu-top">
+      <a href="#hero" class="nav-logo" aria-label="TCE Home">
+        <img src="Logo/tce_logo_wide_black-768x184-2-1.webp" alt="The Crazy Entrepreneur Logo" class="brand-logo-img">
+      </a>
+      <button class="mob-menu-close" id="mobMenuClose" onclick="closeMobMenu()" aria-label="Close menu">&times;</button>
+    </div>
+
+    <!-- Nav items -->
+    <nav class="mob-menu-nav">
+      <ul class="mob-menu-list">
+        <li class="mob-menu-item" style="--i:1">
+          <a href="#positioning" class="mob-menu-link" data-mobclose>
+            <span class="mob-num">01</span><span class="mob-label">About</span>
+          </a>
+        </li>
+        <li class="mob-menu-item" style="--i:2">
+          <a href="#services" class="mob-menu-link" data-mobclose>
+            <span class="mob-num">02</span><span class="mob-label">Services</span>
+          </a>
+        </li>
+        <li class="mob-menu-item" style="--i:3">
+          <a href="#whyus" class="mob-menu-link" data-mobclose>
+            <span class="mob-num">03</span><span class="mob-label">Why Us</span>
+          </a>
+        </li>
+        <li class="mob-menu-item" style="--i:4">
+          <a href="#faq" class="mob-menu-link" data-mobclose>
+            <span class="mob-num">04</span><span class="mob-label">FAQ</span>
+          </a>
+        </li>
+        <li class="mob-menu-item" style="--i:5">
+          <a href="#contact" class="mob-menu-link" data-mobclose>
+            <span class="mob-num">05</span><span class="mob-label">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Bottom CTA -->
+    <div class="mob-menu-cta-wrap">
+      <a href="#contact" class="mob-menu-cta" data-mobclose>
+        Get In Touch <span class="mob-cta-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       HERO
+       ========================================================= -->
+  <main id="main-content">
+  <section class="hero-tce-section" id="hero">
+    <!-- Background Scrolling Creator Grid -->
+    <div class="hero-bg-grid-wrap" aria-hidden="true">
+      <div class="hero-bg-overlay"></div>
+
+      <!-- Col 1 (Scrolls UP) -->
+      <div class="hero-bg-col">
+        <div class="hero-bg-track col-up">
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/1.png" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/3.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/4.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/Adam Huda .png" alt=""></div>
+          <!-- Duplicate for seamless loop -->
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/1.png" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/3.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/4.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/Adam Huda .png" alt=""></div>
+        </div>
+      </div>
+
+      <!-- Col 2 (Scrolls DOWN) -->
+      <div class="hero-bg-col">
+        <div class="hero-bg-track col-down">
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/Arindam .jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/Elliot 5.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/IMG_0082 2.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/IMG_5401.jpeg" alt=""></div>
+          <!-- Duplicate for seamless loop -->
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/Arindam .jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/Elliot 5.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/IMG_0082 2.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/IMG_5401.jpeg" alt=""></div>
+        </div>
+      </div>
+
+      <!-- Col 3 (Scrolls UP) -->
+      <div class="hero-bg-col">
+        <div class="hero-bg-track col-up">
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/Only Use This.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/SaveClip.App_489744557_18498599491061212_2353326025140830602_n.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/SaveClip.App_638328616_18338290993245362_7801137563548344378_n.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/SaveClip.App_705229118_18591894136046409_6599303266519182107_n.jpeg" alt=""></div>
+          <!-- Duplicate for seamless loop -->
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/Only Use This.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/SaveClip.App_489744557_18498599491061212_2353326025140830602_n.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/SaveClip.App_638328616_18338290993245362_7801137563548344378_n.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/SaveClip.App_705229118_18591894136046409_6599303266519182107_n.jpeg" alt=""></div>
+        </div>
+      </div>
+
+      <!-- Col 4 (Scrolls DOWN - PC only) -->
+      <div class="hero-bg-col desktop-col">
+        <div class="hero-bg-track col-down">
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/SaveClip.App_735482942_18597824191018710_5345456354694627402_n.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/Screenshot 2026-08-08 005740.png" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/Untitled design (15).jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/WhatsApp Image 2026-08-06 at 10.16.19 PM (2).jpeg" alt=""></div>
+          <!-- Duplicate for seamless loop -->
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/SaveClip.App_735482942_18597824191018710_5345456354694627402_n.jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/Screenshot 2026-08-08 005740.png" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/Untitled design (15).jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/WhatsApp Image 2026-08-06 at 10.16.19 PM (2).jpeg" alt=""></div>
+        </div>
+      </div>
+
+      <!-- Col 5 (Scrolls UP - PC only) -->
+      <div class="hero-bg-col desktop-col">
+        <div class="hero-bg-track col-up">
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/WhatsApp Image 2026-08-06 at 10.16.19 PM (4).jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/WhatsApp Image 2026-08-06 at 11.22.38 PM (1).jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/WhatsApp Image 2026-08-06 at 7.45.41 AM (1).jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/1.png" alt=""></div>
+          <!-- Duplicate for seamless loop -->
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/WhatsApp Image 2026-08-06 at 10.16.19 PM (4).jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/WhatsApp Image 2026-08-06 at 11.22.38 PM (1).jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/WhatsApp Image 2026-08-06 at 7.45.41 AM (1).jpeg" alt=""></div>
+          <div class="hero-bg-card"><img loading="lazy" src="Hero background img/1.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="hero-tce-grid">
+
+        <!-- Left -->
+        <div class="hero-left">
+          <h1 class="hero-title">
+            Land Your Brand With the Creators America Trusts
+          </h1>
+
+          <span class="pill-eyebrow-red">
+            US INFLUENCER MARKETING AGENCY FOR STARTUPS &amp; SCALE-UPS
+          </span>
+
+          <p class="hero-sub">
+            Driving Growth for Brands Across America
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#contact" class="btn-tce-red">
+              Request a Strategy Call <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#services" class="btn-outline-white">
+              Explore Services
+            </a>
+          </div>
+
+          <div class="official-partners-head">OFFICIAL PLATFORM PARTNERS</div>
+          <div class="official-partners-icons">
+            <a href="javascript:void(0)" class="partner-red-circle" aria-label="Meta"><i class="fa-brands fa-meta"></i></a>
+            <a href="javascript:void(0)" class="partner-red-circle" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="javascript:void(0)" class="partner-red-circle" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="javascript:void(0)" class="partner-red-circle" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Right — single hero video card -->
+        <div class="hero-single-video-wrap">
+          <div class="hero-single-video-card">
+            <video 
+              class="hero-video" 
+              autoplay 
+              loop 
+              muted 
+              playsinline 
+              webkit-playsinline 
+              preload="metadata"
+              style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+              <source src="./hero-video.mp4" type="video/mp4">
+              <source src="hero-video.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       RED MARQUEE
+       ========================================================= -->
+  <div class="red-marquee-banner" aria-hidden="true">
+    <div class="red-marquee-track">
+      <div class="red-marquee-content">
+        <span>CREATOR</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>TECH</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>MEDIA</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>CREATOR</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>TECH</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>MEDIA</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>CREATOR</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>TECH</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>MEDIA</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+      </div>
+
+      <div class="red-marquee-content">
+        <span>CREATOR</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>TECH</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>MEDIA</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>CREATOR</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>TECH</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>MEDIA</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>CREATOR</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>TECH</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+        <span>MEDIA</span>
+        <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       TRUSTED BY GLOBAL BRANDS — Dual-Row Infinite Loop Ticker
+       ========================================================= -->
+  <section class="brands-ticker-section" id="brands">
+    <div class="brands-ticker-head">
+      <span class="eyebrow-red">◆ OUR CLIENTS</span>
+      <h2 class="brands-ticker-title">TRUSTED BY GLOBAL BRANDS</h2>
+    </div>
+
+    <!-- Row 1 — scrolls LEFT -->
+    <div class="brands-ticker-wrap">
+      <div class="brands-ticker-track track-left">
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/meta.png" alt="Meta"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/amazon.png" alt="Amazon"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Samsung.png" alt="Samsung"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Oppo.png" alt="Oppo"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/TikTok .png" alt="TikTok"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/YouTube.png" alt="YouTube"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/instagram.png" alt="Instagram"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Snapchat.png" alt="Snapchat"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Pepsi.png" alt="Pepsi"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Invideo.png" alt="Invideo"></div>
+        <!-- Duplicate for seamless loop -->
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/meta.png" alt="Meta"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/amazon.png" alt="Amazon"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Samsung.png" alt="Samsung"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Oppo.png" alt="Oppo"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/TikTok .png" alt="TikTok"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/YouTube.png" alt="YouTube"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/instagram.png" alt="Instagram"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Snapchat.png" alt="Snapchat"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Pepsi.png" alt="Pepsi"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Invideo.png" alt="Invideo"></div>
+      </div>
+    </div>
+
+    <!-- Row 2 — scrolls RIGHT -->
+    <div class="brands-ticker-wrap">
+      <div class="brands-ticker-track track-right">
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Temu.png" alt="Temu"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Xiaomi.png" alt="Xiaomi"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Xm.png" alt="XM"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/clickup.png" alt="ClickUp"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/bytedance (1).png" alt="ByteDance"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/freefire.png" alt="Free Fire"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/garena.png" alt="Garena"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/kwai.png" alt="Kwai"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/likee.png" alt="Likee"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/trendyol.png" alt="Trendyol"></div>
+        <!-- Duplicate for seamless loop -->
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Temu.png" alt="Temu"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Xiaomi.png" alt="Xiaomi"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/Xm.png" alt="XM"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/clickup.png" alt="ClickUp"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/bytedance (1).png" alt="ByteDance"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/freefire.png" alt="Free Fire"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/garena.png" alt="Garena"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/kwai.png" alt="Kwai"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/likee.png" alt="Likee"></div>
+        <div class="brand-logo-item"><img loading="lazy" src="Brand logos/trendyol.png" alt="Trendyol"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       POSITIONING / INTRO SECTION
+       ========================================================= -->
+  <section class="sec-positioning" id="positioning">
+    <div class="wrap">
+      <div class="positioning-box">
+        <div class="positioning-tag">
+          TCE &nbsp;&gt;&nbsp; INFLUENCER MARKETING AGENCIES
+        </div>
+        <h2 class="positioning-title">
+          Odds Are, Your Audience Is Already In Our Influencer Network
+        </h2>
+        <div class="positioning-desc">
+          <p><strong>TCE</strong> runs one of the largest influencer networks on earth, <strong>over a million creators across 50+ countries</strong>. Whatever your audience looks like and wherever they are, we can find the right voices for your brand. We also keep it to <strong>one brand per vertical</strong>, so you always get our full focus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       WINNING PROPOSITION
+       ========================================================= -->
+  <section class="sec-white" id="stats">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow-red">◆ KEY VALUE PROPOSITIONS</span>
+        <h2 class="sec-title">Winning Proposition</h2>
+      </div>
+
+      <div class="stats-4grid">
+        <div>
+          <div class="stat-box dark">
+            <div class="stat-val">1M+</div>
+            <div class="stat-lbl">INFLUENCER NETWORK</div>
+          </div>
+          <p class="stat-sub">Access verified creators worldwide across multiple niches.</p>
+        </div>
+
+        <div>
+          <div class="stat-box red">
+            <div class="stat-val">50+</div>
+            <div class="stat-lbl">COUNTRIES</div>
+          </div>
+          <p class="stat-sub">Local creators with global reach for localized campaigns.</p>
+        </div>
+
+        <div>
+          <div class="stat-box dark">
+            <div class="stat-val">72h</div>
+            <div class="stat-lbl">GO-LIVE</div>
+          </div>
+          <p class="stat-sub">Campaign go-live in 72 hours. First creator shortlist within 24 hours.</p>
+        </div>
+
+        <div>
+          <div class="stat-box red">
+            <div class="stat-val" style="font-size:clamp(1.25rem,2vw,1.7rem);line-height:1.1;margin-bottom:6px;">END TO END</div>
+            <div class="stat-lbl">EXECUTION</div>
+          </div>
+          <p class="stat-sub">Strategy &rarr; Creators &rarr; Content &rarr; Ads &rarr; Analytics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       HOW IT WORKS
+       ========================================================= -->
+  <section class="sec-black" id="process">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow-red">● HOW IT WORKS</span>
+        <h2 class="sec-title">OUR 5-STEP CAMPAIGN FRAMEWORK</h2>
+      </div>
+
+      <div class="steps-5grid">
+        <div class="step-card">
+          <div class="step-icon"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="step-name">PLAN</div>
+          <p class="step-desc">Audience profiling &amp; campaign brief strategy.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-icon"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="step-name">MATCH</div>
+          <p class="step-desc">AI creator discovery &amp; contract negotiations.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-icon"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="step-name">LAUNCH</div>
+          <p class="step-desc">Synchronized multi-channel content drops.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-icon"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="step-name">AMPLIFY</div>
+          <p class="step-desc">Paid whitelisting dark ads through creators.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-icon"><i class="fa-solid fa-check-double"></i></div>
+          <div class="step-name">REPORT</div>
+          <p class="step-desc">Transparent ROAS, EMV &amp; conversion attribution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       WHY CHOOSE TCE
+       ========================================================= -->
+  <section class="sec-white" id="whyus">
+    <div class="wrap">
+      <div class="why-headline">
+        <span class="why-red">WHY</span><br>
+        <span class="why-black">CHOOSE</span><br>
+        <span class="why-red">TCE</span>
+      </div>
+      <div class="why-divider"></div>
+
+      <div class="checks-grid" style="margin-top:40px;">
+        <div class="check-card">
+          <div class="check-circle"><i class="fa-solid fa-check"></i></div>
+          <span class="check-label">UNMATCHED INFLUENCER NETWORK (1M+)</span>
+        </div>
+        <div class="check-card">
+          <div class="check-circle"><i class="fa-solid fa-check"></i></div>
+          <span class="check-label">GLOBAL REACH + LOCAL CA EXPERTISE</span>
+        </div>
+        <div class="check-card">
+          <div class="check-circle"><i class="fa-solid fa-check"></i></div>
+          <span class="check-label">LIGHTNING-FAST EXECUTION (72hr LAUNCH)</span>
+        </div>
+        <div class="check-card">
+          <div class="check-circle"><i class="fa-solid fa-check"></i></div>
+          <span class="check-label">DATA-DRIVEN &amp; AI-POWERED MATCHING</span>
+        </div>
+        <div class="check-card">
+          <div class="check-circle"><i class="fa-solid fa-check"></i></div>
+          <span class="check-label">TRANSPARENT ROI TRACKING</span>
+        </div>
+        <div class="check-card">
+          <div class="check-circle"><i class="fa-solid fa-check"></i></div>
+          <span class="check-label">EXCLUSIVE ONE BRAND PER CATEGORY POLICY</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       LEADING INFLUENCERS SLIDER
+       ========================================================= -->
+  <section class="sec-black" id="influencers">
+    <div class="wrap">
+      <div class="inf-head-row">
+        <h2 class="inf-title">We partner with <br><span>leading influencers</span></h2>
+        <div class="inf-slider-controls">
+          <button class="inf-arrow-btn prev" id="infPrevBtn" onclick="slideInfluencer('prev')" aria-label="Previous influencer"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="inf-arrow-btn next" id="infNextBtn" onclick="slideInfluencer('next')" aria-label="Next influencer"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="inf-slider-container" id="infSliderContainer">
+        <div class="inf-slider-track" id="infSliderTrack">
+          
+          <!-- Card 1: Niels -->
+          <a href="https://www.instagram.com/appledsign/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/niels.jpeg" alt="Niels">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@appledsign</div>
+              <div class="inf-name">Niels</div>
+              <div class="inf-followers">5.1M Followers</div>
+              <div class="inf-category">Technology & Innovation • USA</div>
+              <div class="inf-brand-tag">Past Brands: Emergent, ClickUp</div>
+            </div>
+          </a>
+
+          <!-- Card 2: Churco Family -->
+          <a href="https://www.instagram.com/laniechurco/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/churco-family.jpeg" alt="Churco Family">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@laniechurco</div>
+              <div class="inf-name">Churco Family</div>
+              <div class="inf-followers">3.3M Followers</div>
+              <div class="inf-category">Parenting, Family & Relationships • USA</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 3: Richard Venner -->
+          <a href="https://www.instagram.com/thegrammargoat/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/richard-venner.jpg" alt="Richard Venner">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@thegrammargoat</div>
+              <div class="inf-name">Richard Venner</div>
+              <div class="inf-followers">2.3M Followers</div>
+              <div class="inf-category">Education, Science & Knowledge • UK</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 4: Pierre Dalati -->
+          <a href="https://www.instagram.com/pierredalati/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/pierre-dalati.jpg" alt="Pierre Dalati">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@pierredalati</div>
+              <div class="inf-name">Pierre Dalati</div>
+              <div class="inf-followers">1.9M Followers</div>
+              <div class="inf-category">Lifestyle & Vlogging • Canada</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 5: Raief -->
+          <a href="https://www.instagram.com/raiefkhalaileh/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/raief.jpg" alt="Raief">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@raiefkhalaileh</div>
+              <div class="inf-name">Raief</div>
+              <div class="inf-followers">1.9M Followers</div>
+              <div class="inf-category">Education, Science & Knowledge • UAE</div>
+              <div class="inf-brand-tag">Past Brands: Emergent, ClickUp</div>
+            </div>
+          </a>
+
+          <!-- Card 6: Wessam -->
+          <a href="https://www.instagram.com/wesamghz/reels/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/wessam.jpg" alt="Wessam">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@wesamghz</div>
+              <div class="inf-name">Wessam</div>
+              <div class="inf-followers">1.6M Followers</div>
+              <div class="inf-category">Technology & Innovation • KSA</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 7: Pushpek -->
+          <a href="https://www.instagram.com/pushpeksidhu_/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/pushpek.jpg" alt="Pushpek">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@pushpeksidhu_</div>
+              <div class="inf-name">Pushpek</div>
+              <div class="inf-followers">1.5M Followers</div>
+              <div class="inf-category">Comedy & Entertainment • Canada</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 8: Marurista -->
+          <a href="https://www.instagram.com/marurista/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/marurista.jpg" alt="Marurista">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@marurista</div>
+              <div class="inf-name">Marurista</div>
+              <div class="inf-followers">1.2M Followers</div>
+              <div class="inf-category">Fitness & Wellness • Canada</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 9: Rihards Urban -->
+          <a href="https://www.instagram.com/grabthatidea/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/rihards-urban.jpeg" alt="Rihards Urban">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@grabthatidea</div>
+              <div class="inf-name">Rihards Urban</div>
+              <div class="inf-followers">1.1M Followers</div>
+              <div class="inf-category">Technology & Innovation • USA</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 10: Luke Davidson -->
+          <a href="https://www.instagram.com/lukedavidson__" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/luke-davidson.jpg" alt="Luke Davidson">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@lukedavidson__</div>
+              <div class="inf-name">Luke Davidson</div>
+              <div class="inf-followers">1.1M Followers</div>
+              <div class="inf-category">Comedy & Entertainment • Canada</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 11: Harry Jaggard -->
+          <a href="https://www.instagram.com/harryjaggard/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/harry-jaggard.jpg" alt="Harry Jaggard">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@harryjaggard</div>
+              <div class="inf-name">Harry Jaggard</div>
+              <div class="inf-followers">907K Followers</div>
+              <div class="inf-category">Travel & Hospitality • UK</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 12: Ben Reid -->
+          <a href="https://www.instagram.com/ben_reid_/reels/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/ben-reid.jpeg" alt="Ben Reid">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@ben_reid_</div>
+              <div class="inf-name">Ben Reid</div>
+              <div class="inf-followers">891K Followers</div>
+              <div class="inf-category">USA</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 13: Edson -->
+          <a href="https://www.instagram.com/iamedsonbrandao/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/edson.jpeg" alt="Edson">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@iamedsonbrandao</div>
+              <div class="inf-name">Edson</div>
+              <div class="inf-followers">786K Followers</div>
+              <div class="inf-category">Fitness & Wellness • USA</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 14: Adam Dunker -->
+          <a href="https://www.instagram.com/adamthedunker/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/adam-dunker.jpeg" alt="Adam Dunker">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@adamthedunker</div>
+              <div class="inf-name">Adam Dunker</div>
+              <div class="inf-followers">740K Followers</div>
+              <div class="inf-category">Comedy & Entertainment • USA</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 15: Lucas Math -->
+          <a href="https://www.instagram.com/lucas_maths4/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/lucas-math.jpeg" alt="Lucas Math">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@lucas_maths4</div>
+              <div class="inf-name">Lucas Math</div>
+              <div class="inf-followers">666K Followers</div>
+              <div class="inf-category">Education, Science & Knowledge • France</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 16: Krystian Salwowski -->
+          <a href="https://www.instagram.com/chris_creates.7/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/krystian-salwowski.jpeg" alt="Krystian Salwowski">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@chris_creates.7</div>
+              <div class="inf-name">Krystian Salwowski</div>
+              <div class="inf-followers">589K Followers</div>
+              <div class="inf-category">Technology & Innovation • Germany</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 17: Raffi Mouchmouchian -->
+          <a href="https://www.instagram.com/raffimoosh/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/raffi-mouchmouchian.jpeg" alt="Raffi Mouchmouchian">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@raffimoosh</div>
+              <div class="inf-name">Raffi Mouchmouchian</div>
+              <div class="inf-followers">553K Followers</div>
+              <div class="inf-category">Automotive & Mobility • USA</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 18: Kumo YTB -->
+          <a href="https://www.youtube.com/@KumoYTB/shorts" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/kumo-ytb.jpeg" alt="Kumo YTB">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@KumoYTB</div>
+              <div class="inf-name">Kumo YTB</div>
+              <div class="inf-followers">429K Followers</div>
+              <div class="inf-category">Pets & Animals • France</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 19: Tyler Strikes -->
+          <a href="https://www.instagram.com/trustnotyler/reels/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/tyler-strikes.jpeg" alt="Tyler Strikes">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@trustnotyler</div>
+              <div class="inf-name">Tyler Strikes</div>
+              <div class="inf-followers">363K Followers</div>
+              <div class="inf-category">Comedy & Entertainment • Italy</div>
+              <div class="inf-brand-tag">Past Brands: Emergent, ClickUp</div>
+            </div>
+          </a>
+
+          <!-- Card 20: Vocast Media -->
+          <a href="https://www.instagram.com/vocast.media" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/vocast-media.jpeg" alt="Vocast Media">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@vocast.media</div>
+              <div class="inf-name">Vocast Media</div>
+              <div class="inf-followers">291K Followers</div>
+              <div class="inf-category">Law, Regulation & Government • France</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 21: Adam Huda -->
+          <a href="https://www.instagram.com/theadamhuda/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/adam-huda.png" alt="Adam Huda">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@theadamhuda</div>
+              <div class="inf-name">Adam Huda</div>
+              <div class="inf-followers">284K Followers</div>
+              <div class="inf-category">Technology & Innovation • USA</div>
+            </div>
+          </a>
+
+          <!-- Card 22: Fabion -->
+          <a href="https://www.instagram.com/fabionkallaku/reels/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/fabion.png" alt="Fabion">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@fabionkallaku</div>
+              <div class="inf-name">Fabion</div>
+              <div class="inf-followers">234K Followers</div>
+              <div class="inf-category">Technology & Innovation • USA</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 23: Ahmed -->
+          <a href="https://www.tiktok.com/@ahmdz.life" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/ahmed.jpeg" alt="Ahmed">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@ahmdz.life</div>
+              <div class="inf-name">Ahmed</div>
+              <div class="inf-followers">189K Followers</div>
+              <div class="inf-category">Technology & Innovation • UAE</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 24: Nakis -->
+          <a href="https://www.instagram.com/v.nakis98/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/nakis.jpeg" alt="Nakis">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@v.nakis98</div>
+              <div class="inf-name">Nakis</div>
+              <div class="inf-followers">102K Followers</div>
+              <div class="inf-category">News & Public Affairs • Greece</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+          <!-- Card 25: Gokhan Hayta -->
+          <a href="https://www.instagram.com/bentasarimciyim/" target="_blank" rel="noopener noreferrer" class="inf-card">
+            <img loading="lazy" src="images/creators/gokhan-hayta.jpeg" alt="Gokhan Hayta">
+            <div class="inf-overlay"></div>
+            <div class="inf-info">
+              <div class="inf-handle">@bentasarimciyim</div>
+              <div class="inf-name">Gokhan Hayta</div>
+              <div class="inf-followers">88.5K Followers</div>
+              <div class="inf-category">Technology & Innovation • Turkey</div>
+              <div class="inf-brand-tag">Past Brand: Emergent</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SERVICES
+       ========================================================= -->
+  <section class="sec-white" id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow-red">OUR CAPABILITIES</span>
+        <h2 class="sec-title">Services</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fa-solid fa-bullhorn" style="font-size:1.7rem;color:var(--red);"></i>
+          <h3>Influencer Marketing Framework</h3>
+          <p>End-to-end campaign architecture designed specifically for high-growth tech startups and scale-ups.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-compass-drafting" style="font-size:1.7rem;color:var(--red);"></i>
+          <h3>Data-Driven Creator Selection</h3>
+          <p>AI-assisted matching to find high-performing creators aligned with your target ICP and brand values.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-list-check" style="font-size:1.7rem;color:var(--red);"></i>
+          <h3>Influencer Outreach Management</h3>
+          <p>Complete handling of creator communication, contract negotiations, briefing, and onboarding.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-video" style="font-size:1.7rem;color:var(--red);"></i>
+          <h3>Creative Direction &amp; Content Direction</h3>
+          <p>High-converting storyboards and narrative hooks tailored to drive maximum viral reach and engagement.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-brands fa-tiktok" style="font-size:1.7rem;color:var(--red);"></i>
+          <h3>Performance Creator Marketing</h3>
+          <p>Turning organic influencer content into high-ROI Spark Ads and paid performance campaigns.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-chart-pie" style="font-size:1.7rem;color:var(--red);"></i>
+          <h3>Influencer Marketing ROI Tracking</h3>
+          <p>Real-time dashboard reporting tracking conversions, customer acquisition cost, and revenue ROI.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       US INFLUENCER PARTNERSHIPS
+       ========================================================= -->
+  <section class="sec-bayarea-block" id="bay-area-partnerships">
+    <div class="wrap">
+      <div class="bayarea-content-box">
+        <span class="bayarea-badge">◆ US INFLUENCER PARTNERSHIPS</span>
+        <h2 class="bayarea-title">
+          If you are still confused, this is why you need Influencer marketing
+        </h2>
+        <p class="bayarea-desc">
+          The way people find and buy things has changed. They ask the internet, they check what people they follow are using, they trust a face over a logo. You can either fight that, or you can use it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FREQUENTLY ASKED QUESTIONS — Reference Accordion Layout
+       ========================================================= -->
+  <section class="sec-faq-ref" id="faq">
+    <div class="wrap">
+
+      <!-- Section Header -->
+      <div class="sec-head" style="margin-bottom: 48px; text-align: center;">
+        <span class="eyebrow-red">◆ FREQUENTLY ASKED QUESTIONS</span>
+        <h2 class="sec-title" style="color: #000000; margin-top: 10px;">GOT QUESTIONS? WE HAVE ANSWERS.</h2>
+        <p style="color: #666666; max-width: 620px; margin: 12px auto 0; font-size: 1.05rem; line-height: 1.6;">
+          Everything you need to know about our creator network, performance attribution, and campaign execution.
+        </p>
+      </div>
+
+      <!-- 2-Column Grid (3 Left, 3 Right) -->
+      <div class="faq-ref-grid">
+
+        <!-- Left Column (3 FAQs) -->
+        <div class="faq-ref-col">
+          <!-- Item 01 (Open by default) -->
+          <div class="faq-ref-card is-open">
+            <button type="button" class="faq-ref-q" aria-expanded="true" onclick="toggleFaqRef(this)">
+              <span class="faq-ref-title">HOW DO WE EXECUTE HIGH-IMPACT INFLUENCER CAMPAIGNS FOR BRANDS?</span>
+              <div class="faq-ref-badge"><i class="fa-solid fa-minus"></i></div>
+            </button>
+            <div class="faq-ref-a">
+              <p>We create high-impact campaigns by partnering with popular online creators whose followers already match your ideal customers, letting them showcase your product naturally instead of reading a boring script. First, we set clear goals like boosting sales or spreading brand awareness and handle all the behind-the-scenes work. Once the best posts are out, we put an extra advertising budget behind the top performers so even more people see them, then measure the exact results so you know your money was well spent.</p>
+            </div>
+          </div>
+
+          <!-- Item 02 -->
+          <div class="faq-ref-card">
+            <button type="button" class="faq-ref-q" aria-expanded="false" onclick="toggleFaqRef(this)">
+              <span class="faq-ref-title">HOW DOES TCE FIND THE RIGHT CREATORS FOR YOUR BRAND?</span>
+              <div class="faq-ref-badge"><i class="fa-solid fa-plus"></i></div>
+            </button>
+            <div class="faq-ref-a">
+              <p>Every creator is assessed on real engagement, audience quality, and how well their followers match the people you're trying to reach. We also check past campaign performance and screen out fake followers and inflated numbers, so you're only matched with creators whose influence is genuine and whose audience actually fits your brand.</p>
+            </div>
+          </div>
+
+          <!-- Item 03 -->
+          <div class="faq-ref-card">
+            <button type="button" class="faq-ref-q" aria-expanded="false" onclick="toggleFaqRef(this)">
+              <span class="faq-ref-title">HOW FAST CAN A CAMPAIGN LAUNCH FROM BRIEF TO GO-LIVE?</span>
+              <div class="faq-ref-badge"><i class="fa-solid fa-plus"></i></div>
+            </button>
+            <div class="faq-ref-a">
+              <p>Our fastest turnaround from brief to launch is 72 hours, including creator matching, contracts, and content approvals. You can expect your first creator shortlist within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column (3 FAQs) -->
+        <div class="faq-ref-col">
+          <!-- Item 04 -->
+          <div class="faq-ref-card">
+            <button type="button" class="faq-ref-q" aria-expanded="false" onclick="toggleFaqRef(this)">
+              <span class="faq-ref-title">HOW DO YOU TRACK AND MEASURE REAL-TIME CAMPAIGN ROI?</span>
+              <div class="faq-ref-badge"><i class="fa-solid fa-plus"></i></div>
+            </button>
+            <div class="faq-ref-a">
+              <p>We track your campaign's live performance through a central dashboard that instantly shows where your money goes and what it earns back. By assigning each creator unique promo codes and direct links, we trace sales straight to the specific post that generated them. At the same time, the system monitors exact engagement costs, showing what you pay per like, comment or share and measures the total exposure value compared to traditional advertising. This gives you full, end to end visibility into the viewer's path from initial discovery to final purchase, ensuring complete transparency and proven returns every step of the way.</p>
+            </div>
+          </div>
+
+          <!-- Item 05 -->
+          <div class="faq-ref-card">
+            <button type="button" class="faq-ref-q" aria-expanded="false" onclick="toggleFaqRef(this)">
+              <span class="faq-ref-title">DOES TCE HANDLE CONTRACTS AND CREATOR PAYMENTS?</span>
+              <div class="faq-ref-badge"><i class="fa-solid fa-plus"></i></div>
+            </button>
+            <div class="faq-ref-a">
+              <p>Yes. We manage the full process, from issuing contracts and agreeing usage rights to handling creator payments across different countries and currencies.</p>
+            </div>
+          </div>
+
+          <!-- Item 06 -->
+          <div class="faq-ref-card">
+            <button type="button" class="faq-ref-q" aria-expanded="false" onclick="toggleFaqRef(this)">
+              <span class="faq-ref-title">WHAT CAMPAIGN BUDGET SIZES DOES TCE WORK WITH?</span>
+              <div class="faq-ref-badge"><i class="fa-solid fa-plus"></i></div>
+            </button>
+            <div class="faq-ref-a">
+              <p>We build scalable packages tailored to growth startups and enterprise brands alike, ranging minimum from $10K and above.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+  function toggleFaqRef(card) {
+    card.classList.toggle('is-open');
+    const icon = card.querySelector('.faq-ref-badge i');
+    if (icon) {
+      if (card.classList.contains('is-open')) {
+        icon.className = 'fa-solid fa-minus';
+      } else {
+        icon.className = 'fa-solid fa-plus';
+      }
+    }
+  }
+  </script>
+
+  <!-- =========================================================
+       CREATOR MARKET VALUE & FORECASTS
+       ========================================================= -->
+  <section class="sec-forecasts" id="market-forecasts">
+    <div class="wrap">
+      <div class="sec-head" style="text-align: center; margin-bottom: 48px;">
+        <span class="eyebrow-red">◆ INDUSTRY INSIGHTS &amp; FORECASTS</span>
+        <h2 class="sec-title" style="color: #ffffff; margin-top: 10px;">The Numbers Behind Creator Marketing</h2>
+      </div>
+
+      <div class="forecasts-4grid">
+        <div class="forecast-card">
+          <div class="forecast-metric">$1.2 Trillion</div>
+          <p class="forecast-subtext">Creator Economy by 2032</p>
+        </div>
+
+        <div class="forecast-card">
+          <div class="forecast-metric">$8.5 Trillion</div>
+          <p class="forecast-subtext">Social Commerce by 2030</p>
+        </div>
+
+        <div class="forecast-card">
+          <div class="forecast-metric">75%</div>
+          <p class="forecast-subtext">Of Consumers Use Social to Make Purchase Decisions</p>
+        </div>
+
+        <div class="forecast-card">
+          <div class="forecast-metric">67%</div>
+          <p class="forecast-subtext">Of Consumers Trust Creators Over Traditional Brand Ads</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       LET'S WORK TOGETHER BANNER
+       ========================================================= -->
+  <div class="banner-work-wrap">
+    <div class="banner-work">
+      <h2>LET'S WORK TOGETHER</h2>
+      <p>Book a 30-minute strategy call and get a clear roadmap for your markets, creators, platforms, and success metrics.</p>
+      <a href="#contact" class="btn-tce-red">
+        Scale Your Brand <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       ENTERPRISE CONTACT
+       ========================================================= -->
+  <section class="sec-contact" id="contact">
+    <div class="wrap">
+      
+      
+      
+
+      <!-- Tabs -->
+      <div class="tabs-row" role="tablist">
+        <button class="tab-btn active" type="button" data-flow="brand">Brand</button>
+        <button class="tab-btn" type="button" data-flow="creator">Creator</button>
+      </div>
+
+      <div class="contact-cols">
+        <!-- Form -->
+        <form id="enterpriseForm">
+          <div class="form-card">
+            <div class="form-top">
+              <h3 id="formTitle">Speak to a Campaign Expert</h3>
+              <span class="response-badge">24-Hour Response</span>
+            </div>
+            <div class="fields-grid" id="dynamicFields"></div>
+            <div class="form-submit-row">
+              <button class="btn-tce-red" id="submitBtn" type="submit">
+                GET A CUSTOM PROPOSAL
+              </button>
+              <p class="form-note">For enterprise briefs, TCE can sign an NDA before detailed campaign information is shared.</p>
+            </div>
+          </div>
+        </form>
+
+        <!-- Sidebar -->
+        <aside>
+          <div class="sidebar-card">
+            <h3>Direct Contact</h3>
+            <div class="side-row"><span>Email</span><a href="mailto:work@thecrazyentrepreneur.com">work@thecrazyentrepreneur.com</a></div>
+            <div class="side-row"><span>WhatsApp</span><a href="https://wa.me/18147705424" target="_blank" rel="noopener noreferrer">Sales team</a></div>
+            <div class="side-row"><span>LinkedIn</span><a href="https://www.linkedin.com/company/thecrazyentrepreneur/" target="_blank" rel="noopener noreferrer">TCE company page</a></div>
+          </div>
+          <div class="sidebar-card">
+            <h3>Global Offices</h3>
+            <div class="side-row">UAE      <span>MENA</span></div>
+            <div class="side-row">Delaware   <span>US</span></div>
+            <div class="side-row">London     <span>Europe</span></div>
+            <div class="side-row">Mumbai     <span>South Asia</span></div>
+            <div class="side-row">Hong Kong  <span>APAC</span></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="wrap">
+
+      <!-- Newsletter -->
+      <div class="ft-nl-row">
+        <div class="ft-nl-left">
+          <h3>Stay ahead of the creator economy</h3>
+          <p>Monthly briefing on campaign benchmarks and platform shifts. No spam.</p>
+        </div>
+        <form class="ft-nl-form" id="newsletterForm">
+          <input type="email" placeholder="name@company.com" class="ft-nl-input" required>
+          <button type="submit" class="ft-nl-btn">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Stats -->
+      <div class="ft-stats">
+        <div class="ft-stat"><h4>1M+</h4><p>Creators onboarded</p></div>
+        <div class="ft-stat"><h4>500+</h4><p>Campaigns executed</p></div>
+        <div class="ft-stat"><h4>320+</h4><p>Brands onboarded</p></div>
+        <div class="ft-stat"><h4>50+</h4><p>Countries reached</p></div>
+      </div>
+
+      <!-- Landing Page Dedicated Footer Columns -->
+      <div class="ft-cols">
+        <div>
+          <div class="ft-brand-name">THE CRAZY ENTREPRENEUR</div>
+          <p class="ft-brand-tagline">TCE - Global Creator Marketing Agency.</p>
+          <div class="ft-socials">
+            <a href="javascript:void(0)" class="ft-social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="javascript:void(0)" class="ft-social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <div class="ft-col-head">NAVIGATION</div>
+          <ul class="ft-list">
+            <li><a href="#positioning">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#whyus">Why Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="ft-col-head">GET IN TOUCH</div>
+          <ul class="ft-list">
+            <li><a href="mailto:work@thecrazyentrepreneur.com" class="ft-email-link">work@thecrazyentrepreneur.com</a></li>
+            <li><a href="#contact">Book a Strategy Call</a></li>
+            <li><a href="#contact">Partner With Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Red Announcement Bar -->
+      <div class="nav-announce-bar" style="margin: 36px 0 28px; border-radius: 10px;">
+        OUR TEAM WILL ONLY EVER REACH OUT FROM OUR&nbsp;
+        <strong>@THECRAZYENTREPRENEUR.COM</strong>&nbsp;EMAIL
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="ft-bottom">
+        <span>The Crazy Entrepreneur &copy; 2019–2026. All rights reserved.</span>
+        <div class="ft-bottom-links">
+          <a href="javascript:void(0)">Privacy Policy</a>
+          <a href="javascript:void(0)">Terms of Service</a>
+          <a href="javascript:void(0)">Cookie Settings</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       SUCCESS MODAL
+       ========================================================= -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-box">
+      <div class="modal-icon"><i class="fa-solid fa-check"></i></div>
+      <h3>Request Received!</h3>
+      <p>A TCE campaign strategist is reviewing your submission and will respond within 24 hours.</p>
+      <button class="btn-tce-red" id="closeModalBtn" style="width:100%;justify-content:center;">
+        Return to Site
+      </button>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       JAVASCRIPT
+       ========================================================= -->
+  <script>
+  /* Global Mobile Menu Functions */
+  function openMobMenu() {
+    const overlay = document.getElementById('mobMenuOverlay');
+    const navIcon = document.getElementById('navIcon');
+    if (overlay) {
+      overlay.classList.add('mob-open');
+      document.body.style.overflow = 'hidden';
+    }
+    if (navIcon) {
+      navIcon.classList.remove('fa-bars');
+      navIcon.classList.add('fa-xmark');
+    }
+  }
+
+  function closeMobMenu() {
+    const overlay = document.getElementById('mobMenuOverlay');
+    const navIcon = document.getElementById('navIcon');
+    if (overlay) {
+      overlay.classList.remove('mob-open');
+      document.body.style.overflow = '';
+    }
+    if (navIcon) {
+      navIcon.classList.add('fa-bars');
+      navIcon.classList.remove('fa-xmark');
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+
+    document.querySelectorAll('[data-mobclose]').forEach(el => {
+      el.addEventListener('click', closeMobMenu);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMobMenu();
+    });
+
+    /* --- Automatic Hero Reel Collage Rotation --- */
+    const heroCards = document.querySelectorAll('.tilted-photo-card');
+    if (heroCards.length > 0) {
+      let heroIndex = 0;
+      heroCards[heroIndex].classList.add('in-front');
+
+      setInterval(() => {
+        heroCards.forEach(c => c.classList.remove('in-front'));
+        heroIndex = (heroIndex + 1) % heroCards.length;
+        heroCards[heroIndex].classList.add('in-front');
+      }, 2800);
+    }
+
+    /* --- Live World Clocks --- */
+    const clocks = {
+      clockDubai:    'Asia/Dubai',
+      clockMumbai:   'Asia/Kolkata',
+      clockLondon:   'Europe/London',
+      clockDelaware: 'America/New_York',
+      clockHongKong: 'Asia/Hong_Kong'
+    };
+    function tickClocks() {
+      const opts = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+      Object.keys(clocks).forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = new Date().toLocaleTimeString('en-US', { timeZone: clocks[id], ...opts });
+      });
+    }
+    tickClocks();
+    setInterval(tickClocks, 1000);
+
+    /* --- Contact Form Flows --- */
+    const baseFields = [
+      { label:'Full name',      type:'text',     ph:'Jane Smith' },
+      { label:'Email',          type:'email',    ph:'jane@company.com' },
+      { label:'Organization',   type:'text',     ph:'Company or creator name' },
+      { label:'Location',       type:'text',     ph:'City, country' },
+      { label:'Message',        type:'textarea', ph:'Briefly tell us what you need.', full:true }
+    ];
+
+    const flows = {
+      brand:   { title:'Speak to a Campaign Expert', submit:'Get a Custom Proposal',  section:'Campaign details',  extras:[
+        { label:'Campaign budget',  type:'select',  opts:['Select budget','$25k-$50k','$50k-$100k','$100k-$250k','$250k+'] },
+        { label:'Target markets',   type:'text',    ph:'US, UAE, UK, India…' },
+        { label:'Timeline',         type:'select',  opts:['Select timeline','ASAP','30 days','This quarter','Planning ahead'] }
+      ]},
+      creator: { title:'Apply to Join TCE', submit:'Submit Creator Profile', section:'Creator details', extras:[
+        { label:'Primary platform', type:'select', opts:['Select platform','TikTok','Instagram','YouTube','LinkedIn','Other'] },
+        { label:'Profile link',     type:'url',    ph:'https://instagram.com/…' },
+        { label:'Audience size',    type:'select', opts:['Select size','10k-50k','50k-250k','250k-1M','1M+'] }
+      ]},
+      partner: { title:'Discuss a Partnership', submit:'Start Conversation', section:'Partnership details', extras:[
+        { label:'Partnership type', type:'select', opts:['Select type','Platform','Agency','Technology','Media','Investor','Other'] },
+        { label:'Markets',          type:'text',   ph:'Relevant markets' },
+        { label:'Timeline',         type:'select', opts:['Select timeline','This month','This quarter','Exploratory'] }
+      ]},
+      media:   { title:'Reach the Media Team', submit:'Send Media Inquiry', section:'Media details', extras:[
+        { label:'Deadline', type:'text',   ph:'When do you need a response?' },
+        { label:'Format',   type:'select', opts:['Select format','Interview','Commentary','Podcast','Speaking','Press request'] }
+      ]},
+      careers: { title:'Explore Careers at TCE', submit:'Submit Interest', section:'Career details', extras:[
+        { label:'Area of interest', type:'select', opts:['Select area','Sales','Campaign strategy','Creator success','Operations','Data and AI','Other'] },
+        { label:'LinkedIn',         type:'url',    ph:'https://linkedin.com/in/…' }
+      ]}
+    };
+
+    const fieldsEl  = document.getElementById('dynamicFields');
+    const titleEl   = document.getElementById('formTitle');
+    const submitEl  = document.getElementById('submitBtn');
+
+    function makeField(f) {
+      const cell = document.createElement('div');
+      cell.className = f.full ? 'f-cell full' : 'f-cell';
+
+      const id  = f.label.toLowerCase().replace(/[^a-z0-9]+/g,'-');
+      const lbl = document.createElement('label');
+      lbl.htmlFor = id;
+      lbl.textContent = f.label;
+
+      let ctrl;
+      if (f.type === 'select') {
+        ctrl = document.createElement('select');
+        f.opts.forEach((o, i) => {
+          const opt = document.createElement('option');
+          opt.value = i ? o : ''; opt.textContent = o;
+          ctrl.appendChild(opt);
+        });
+      } else if (f.type === 'textarea') {
+        ctrl = document.createElement('textarea');
+        ctrl.placeholder = f.ph;
+      } else {
+        ctrl = document.createElement('input');
+        ctrl.type = f.type; ctrl.placeholder = f.ph;
+      }
+      ctrl.id = id; ctrl.name = id;
+      cell.append(lbl, ctrl);
+      return cell;
+    }
+
+    function renderFlow(key) {
+      const flow = flows[key];
+      titleEl.textContent  = flow.title;
+      submitEl.textContent = flow.submit;
+      fieldsEl.innerHTML   = '';
+
+      baseFields.forEach(f => fieldsEl.appendChild(makeField(f)));
+
+      const div = document.createElement('div');
+      div.className = 'f-divider'; div.textContent = flow.section;
+      fieldsEl.appendChild(div);
+
+      flow.extras.forEach(f => fieldsEl.appendChild(makeField(f)));
+    }
+
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderFlow(btn.dataset.flow);
+      });
+    });
+
+    renderFlow('brand');
+
+    /* --- Form submissions → modal --- */
+    const modal     = document.getElementById('successModal');
+    const closeBtn  = document.getElementById('closeModalBtn');
+
+    function showModal() { modal.classList.add('active'); }
+    closeBtn.addEventListener('click', () => modal.classList.remove('active'));
+
+    document.getElementById('enterpriseForm').addEventListener('submit', e => {
+      e.preventDefault(); showModal();
+      const flow = document.querySelector('.tab-btn.active').dataset.flow;
+      setTimeout(() => renderFlow(flow), 1800);
+    });
+    document.getElementById('freePlanForm').addEventListener('submit', e => {
+      e.preventDefault(); showModal(); e.target.reset();
+    });
+    document.getElementById('newsletterForm').addEventListener('submit', e => {
+      e.preventDefault(); alert('Thank you! You are now subscribed.'); e.target.reset();
+    });
+
+    /* --- Region tabs --- */
+    const regionData = {
+      global:   { title:'GLOBAL REACH (160+ MARKETS)',   desc:'Direct execution across North America, Europe, MENA, APAC, and LATAM with 1M+ vetted creators and localized campaign managers.' },
+      apac:     { title:'APAC REGIONAL HUB',             desc:'Dedicated agency teams in Hong Kong, Tokyo, and Singapore managing APAC creator campaigns at scale.' },
+      emea:     { title:'EMEA REGIONAL HUB',             desc:'London & Dubai offices executing multi-lingual European and Middle Eastern creator activations.' },
+      americas: { title:'AMERICAS REGIONAL HUB',         desc:'New York, San Francisco, and Delaware operations managing US and LATAM creator campaigns.' }
+    };
+
+    const rTitle = document.getElementById('regionTitle');
+    const rDesc  = document.getElementById('regionDesc');
+
+    document.querySelectorAll('.r-tab').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.r-tab').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const d = regionData[btn.dataset.region];
+        if (d && rTitle && rDesc) { rTitle.textContent = d.title; rDesc.textContent = d.desc; }
+      });
+    });
+
+    /* --- White Agency FAQ Accordion --- */
+    document.querySelectorAll('[data-faqwhite]').forEach(card => {
+      card.addEventListener('click', function() {
+        this.classList.toggle('open');
+      });
+    });
+
+    /* --- Influencers Slider Mouse Drag --- */
+    const infContainer = document.getElementById('infSliderContainer');
+    if (infContainer) {
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      infContainer.addEventListener('mousedown', (e) => {
+        isDown = true;
+        infContainer.style.cursor = 'grabbing';
+        startX = e.pageX - infContainer.offsetLeft;
+        scrollLeft = infContainer.scrollLeft;
+      });
+      infContainer.addEventListener('mouseleave', () => {
+        isDown = false;
+        infContainer.style.cursor = 'grab';
+      });
+      infContainer.addEventListener('mouseup', () => {
+        isDown = false;
+        infContainer.style.cursor = 'grab';
+      });
+      infContainer.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - infContainer.offsetLeft;
+        const walk = (x - startX) * 1.5;
+        infContainer.scrollLeft = scrollLeft - walk;
+      });
+    }
+
+    /* --- Timed 5-Second Popup Modal --- */
+    setTimeout(() => {
+      const timedModal = document.getElementById('timedLeadModal');
+      if (timedModal) {
+        timedModal.classList.add('active');
+      }
+    }, 5000);
+
+    const timedModalClose = document.getElementById('leadModalClose');
+    const timedModal = document.getElementById('timedLeadModal');
+    if (timedModalClose && timedModal) {
+      timedModalClose.addEventListener('click', () => {
+        timedModal.classList.remove('active');
+      });
+
+      timedModal.addEventListener('click', (e) => {
+        if (e.target === timedModal) {
+          timedModal.classList.remove('active');
+        }
+      });
+    }
+
+    const popCtaBtn = document.getElementById('popCtaBtn');
+    if (popCtaBtn && timedModal) {
+      popCtaBtn.addEventListener('click', () => {
+        timedModal.classList.remove('active');
+      });
+    }
+
+  });
+
+  /* Global function for Influencers Slider Arrows */
+  function slideInfluencer(direction) {
+    const container = document.getElementById('infSliderContainer');
+    if (!container) return;
+    const amount = 350;
+    if (direction === 'next') {
+      container.scrollBy({ left: amount, behavior: 'smooth' });
+    } else {
+      container.scrollBy({ left: -amount, behavior: 'smooth' });
+    }
+  }
+  </script>
+
+  <!-- =========================================================
+       TIMED POPUP MODAL (Triggers after 5 seconds - Reference Match)
+       ========================================================= -->
+  <div class="lead-modal-overlay" id="timedLeadModal" aria-hidden="true">
+    <div class="lead-modal-box">
+      <!-- Close button top-right -->
+      <button class="lead-modal-close-sq" id="leadModalClose" aria-label="Close popup">&times;</button>
+      
+      <!-- Overlapping 3 creator avatar circles -->
+      <div class="pop-avatars-row">
+        <div class="pop-avatar-circle"><img loading="lazy" src="images/creators/niels.jpeg" alt="Creator 1"></div>
+        <div class="pop-avatar-circle"><img loading="lazy" src="images/creators/churco-family.jpeg" alt="Creator 2"></div>
+        <div class="pop-avatar-circle"><img loading="lazy" src="images/creators/ben-reid.jpeg" alt="Creator 3"></div>
+      </div>
+
+      <!-- Headline -->
+      <h2 class="pop-headline">
+        <span class="pop-hl-white">BUILT FOR CREATORS</span>
+        <span class="pop-hl-red">BACKED BY RESULTS</span>
+      </h2>
+
+      <!-- Description -->
+      <p class="pop-desc">
+        We craft game-changing strategies with social-first talent, creating scroll-stopping content that drives results.
+      </p>
+
+      <!-- CTA Button -->
+      <a href="#contact" class="btn-tce-red pop-cta-btn" id="popCtaBtn">
+        START A CAMPAIGN TODAY
+      </a>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/18147705424" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="#ffffff" style="display:block; width:30px; height:30px;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- Lenis JS CDN -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <!-- External Script -->
+  <script src="script.js"></script>
+
+  <!-- =========================================================
+       LENIS SMOOTH SCROLL + GSAP SCROLLTRIGGER
+       ========================================================= -->
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    if (typeof Lenis === 'undefined') return;
+
+    /* ---- 1. Lenis Smooth Scroll ---- */
+    const lenis = new Lenis({
+      duration: 1.4,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      wheelMultiplier: 1.0,
+      smoothTouch: false,
+      touchMultiplier: 1.5,
+      infinite: false,
+    });
+    window.lenis = lenis;
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    /* Intercept anchor link clicks for smooth Lenis scrolling */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href && href !== '#' && href.length > 1) {
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            lenis.scrollTo(target, { offset: -60, duration: 1.2 });
+          }
+        }
+      });
+    });
+
+    /* Stop/Start Lenis on mobile menu open/close */
+    const origOpen = window.openMobMenu;
+    const origClose = window.closeMobMenu;
+    window.openMobMenu = function() {
+      if (typeof lenis.stop === 'function') lenis.stop();
+      if (origOpen) origOpen();
+    };
+    window.closeMobMenu = function() {
+      if (typeof lenis.start === 'function') lenis.start();
+      if (origClose) origClose();
+    };
+
+    /* ---- 2. GSAP + ScrollTrigger ---- */
+    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+      gsap.registerPlugin(ScrollTrigger);
+
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add((time) => { lenis.raf(time * 1000); });
+      gsap.ticker.lagSmoothing(0);
+
+      /* Staggered section reveals */
+      const fadeElements = document.querySelectorAll('.sec-head, .why-headline, .brands-ticker-head, .inf-head-row, .faq-head, .stats-4grid > div, .step-card, .service-card, .inf-card, .faq-ref-card, .story-card, .case-card');
+      fadeElements.forEach((el) => {
+        gsap.fromTo(el,
+          { opacity: 0.1, y: 25 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: el,
+              start: 'top 90%',
+              toggleActions: 'play none none none',
+            }
+          }
+        );
+      });
+
+      ScrollTrigger.refresh();
+    }
+  });
+  </script>
+
+</body>
+</html>
