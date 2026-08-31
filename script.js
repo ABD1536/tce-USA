@@ -170,10 +170,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const newsletterForm = document.querySelector("#newsletterForm");
   const successModal = document.querySelector("#successModal");
   const closeModalBtn = document.querySelector("#closeModalBtn");
-  const webhookUrl = "https://script.google.com/macros/s/AKfycbwEHducHpAd-L12mE7rrOKpR_qF0y_lPLhjHk8WHORghHFga23zacy8jwaikYbLcy_z/exec";
+  const endpointUrl = "https://script.google.com/macros/s/AKfycbyRnE78A3tpnJDvjV75YMfDZx69Plx_0_Gg-IwEvPlHpzYJgYNHO-7gxPetbQfThtCN/exec";
+
+  const submitForm = async (payload) => {
+    try {
+      await fetch(endpointUrl, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8"
+        },
+        body: JSON.stringify(payload)
+      });
+      return true;
+    } catch (err) {
+      console.error("Submission failed:", err);
+      return false;
+    }
+  };
 
   if (enterpriseForm) {
-    enterpriseForm.addEventListener("submit", (e) => {
+    enterpriseForm.addEventListener("submit", async (e) => {
       e.preventDefault();
 
       // Reset custom validity error messages
@@ -197,25 +214,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const activeFlow = document.querySelector(".tab-btn.active")?.dataset.flow || "brand";
 
-      // Collect field values for JSON payload
-      const nameVal = enterpriseForm.querySelector("#full-name")?.value.trim() || "";
-      const emailVal = enterpriseForm.querySelector("#email")?.value.trim() || "";
-      const phoneVal = enterpriseForm.querySelector("#phone-number")?.value.trim() || "";
-      const orgVal = enterpriseForm.querySelector("#organization")?.value.trim() || "";
-      const locVal = enterpriseForm.querySelector("#location")?.value.trim() || "";
-      const msgVal = enterpriseForm.querySelector("#message")?.value.trim() || "";
-
-      const budgetVal = enterpriseForm.querySelector("#campaign-budget")?.value || enterpriseForm.querySelector("#audience-size")?.value || "";
-      const marketVal = enterpriseForm.querySelector("#target-markets")?.value.trim() || enterpriseForm.querySelector("#profile-link")?.value.trim() || "";
-      const timelineVal = enterpriseForm.querySelector("#timeline")?.value || enterpriseForm.querySelector("#primary-platform")?.value || "";
+      // Form Payload Structure with exact required keys
+      const payload = {
+        landingPage: "USA",
+        fullName: enterpriseForm.querySelector("#full-name")?.value.trim() || "",
+        email: enterpriseForm.querySelector("#email")?.value.trim() || "",
+        phoneNumber: enterpriseForm.querySelector("#phone-number")?.value.trim() || "",
+        organization: enterpriseForm.querySelector("#organization")?.value.trim() || "",
+        location: enterpriseForm.querySelector("#location")?.value.trim() || "",
+        message: enterpriseForm.querySelector("#message")?.value.trim() || "",
+        campaignBudget: enterpriseForm.querySelector("#campaign-budget")?.value || enterpriseForm.querySelector("#audience-size")?.value || "",
+        targetMarkets: enterpriseForm.querySelector("#target-markets")?.value.trim() || enterpriseForm.querySelector("#profile-link")?.value.trim() || "",
+        timeline: enterpriseForm.querySelector("#timeline")?.value || enterpriseForm.querySelector("#primary-platform")?.value || ""
+      };
 
       // Mandatory validation check
-      if (!nameVal || !emailVal || !phoneVal || !orgVal) {
+      if (!payload.fullName || !payload.email || !payload.phoneNumber || !payload.organization) {
         alert("Please fill in all required fields (Full Name, Email, Phone Number, Organization).");
         return;
       }
 
-      if (activeFlow === "brand" && !budgetVal) {
+      if (activeFlow === "brand" && !payload.campaignBudget) {
         const budgetElem = enterpriseForm.querySelector("#campaign-budget");
         if (budgetElem) {
           budgetElem.setCustomValidity("Please select a campaign budget.");
@@ -224,64 +243,46 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
-      // Exact JSON payload matching specification with phone key
-      const payload = {
-        name: nameVal,
-        email: emailVal,
-        phone: phoneVal,
-        organization: orgVal,
-        location: locVal,
-        message: msgVal,
-        budget: budgetVal,
-        target_markets: marketVal,
-        timeline: timelineVal,
-        source: "San Francisco LP"
-      };
-
-      // Show loading state on submit button
+      // UI: Disable submit button and show "Submitting..."
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> SUBMITTING...';
+        submitBtn.textContent = "Submitting...";
       }
 
-      fetch(webhookUrl, {
-        method: "POST",
-        mode: "cors",
-        headers: {
-          "Content-Type": "text/plain;charset=utf-8"
-        },
-        body: JSON.stringify(payload)
-      })
-      .then(response => {
-        if (response.ok || response.status === 200 || response.type === "opaque") {
-          return response.text().catch(() => "");
-        }
-        throw new Error("Server responded with status " + response.status);
-      })
-      .then(data => {
-        // Trigger success modal ONLY on successful submission
+      const successNotice = document.querySelector("#formSuccessNotice");
+      if (successNotice) {
+        successNotice.style.display = "none";
+      }
+
+      const isSuccess = await submitForm(payload);
+
+      if (isSuccess) {
+        // Show success message on modal and inline notice
         if (successModal) {
+          const modalP = successModal.querySelector("p");
+          if (modalP) {
+            modalP.textContent = "Thank you! We will get back to you within 24 hours.";
+          }
           successModal.classList.add("active");
         }
+
+        if (successNotice) {
+          successNotice.textContent = "Thank you! We will get back to you within 24 hours.";
+          successNotice.style.display = "block";
+        }
+
+        // Clear/reset all input fields
         enterpriseForm.reset();
         renderFlow(activeFlow);
-      })
-      .catch(error => {
-        console.error("Webhook submission notice:", error);
-        // Fallback for opaque mode
-        if (successModal) {
-          successModal.classList.add("active");
-        }
-        enterpriseForm.reset();
-        renderFlow(activeFlow);
-      })
-      .finally(() => {
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          const flowSubmit = flows[activeFlow]?.submit || "GET A CUSTOM PROPOSAL";
-          submitBtn.textContent = flowSubmit;
-        }
-      });
+      } else {
+        alert("Submission failed. Please check your connection and try again.");
+      }
+
+      // Re-enable the button with the label "GET A CUSTOM PROPOSAL"
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "GET A CUSTOM PROPOSAL";
+      }
     });
   }
 
